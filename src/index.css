@@ -1,0 +1,17 @@
+.dark{
+    --bg-main: #1e1e1e;
+    --bg-item-main: #282c2d;
+    --color-main: #fff;  
+    --color-accent: #fff; 
+    --title: #767676;
+    --title-two: #767676;
+}
+.light {
+    --bg-main: #eaf6ff;      
+    --bg-item-main: #0078d4; 
+    --color-main: #333333;   
+    --color-accent: #e0e0e0; 
+    --title: #282c2d;
+    --title-two: #383838;
+}
+

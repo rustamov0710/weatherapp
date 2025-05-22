@@ -1,0 +1,361 @@
+/* General Sidebar Styles */
+.sidebar__highlights {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar__highlights-title {
+  font-size: 1.4rem; 
+  color: var(--title);
+  font-weight: bold;
+}
+
+.sidebar__highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bg-item-main);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 575px; 
+  height: 280px;
+}
+
+.sidebar__highlight-status {
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.sidebar__highlight-details{
+  padding-left: 0px;
+}
+.sidebar__highlight-details li p{
+  color: var(--title);
+}
+.sidebar__sun-info {
+  background-color: var(--bg-item-main);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 575px;
+  height: 280px;
+}
+
+.sidebar__sun-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.sidebar__sun-info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar__sun-info div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+
+.wind {
+  width: 70px;
+  height: 70px;
+}
+
+.sidebar__extra-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidebar__extra li {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-item-main);
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 235px;
+  height: 100px;
+}
+
+.drop {
+  width: 40px;
+  height: 40px;
+  margin-right: auto;
+}
+
+.drop-box {
+  margin-top: 10px;
+}
+.sidebar__extra{
+    width: 100%;
+}
+.sidebar__extra h3 {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.sidebar__extra div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar__extra h2 {
+  font-size: 1rem;
+  width: 1000px;
+}
+.sidebar__hourly{
+  margin-bottom: 100px;
+}
+.sidebar__hourly ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 1250px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sidebar__hourly li {
+  background-color: var(--bg-item-main);
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  width: 110px;
+  height: 150px;
+}
+.sidebar__hourly h2 {
+  color: var(--title);
+
+}
+.dayDate{
+  font-size: 0.875rem;
+  color: var(--title);
+}
+.sidebar__hourly img {
+  width: 40px;
+  height: 40px;
+}
+
+.highlights-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: var(--title);
+  font-weight: 500;
+}
+.sunrise {
+  margin-bottom: 20px;
+}
+.good{
+  background-color: green;
+  color: #fff;
+}
+.mode{
+  background-color: lightgreen;
+  color: #292929;
+}
+.fair{
+  background-color: yellow;
+  color: #292929;
+}
+.poor{
+  background-color: orange;
+  color: #292929;
+}
+.very{
+  background-color: red;
+  color: #fff;
+}
+/* Future Responsive Design */
+@media screen and (max-width: 1335px) {
+  .sidebar__hourly ul{
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sidebar__extra li {
+        width: 48%;
+        max-width: 100%;
+        height: auto;
+    }
+    .sunset{
+      margin-top: 20px;
+    }
+    .sidebar__extra-list {
+      justify-content: center;
+    }
+    .sidebar__hourly ul{
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media screen and (max-width: 1090px) {
+    .sidebar__hourly ul{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  @media screen and (max-width: 1015px) {
+    .sidebar__hourly ul{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media screen and (max-width: 825px) {
+    .sidebar__hourly ul{
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      
+
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+@media screen and (max-width: 1185px) {
+    .sidebar__highlight-details h2 {
+        font-size: 16px;
+      }
+      .air{
+        font-size: 12px;
+      }
+      
+      .sidebar__highlight-details p {
+        font-size: 10px;
+        color: #767676;
+      }
+      
+}
+@media screen and (max-width: 1050px) {
+    .sidebar__highlight-details h2 {
+        font-size: 14px;
+      }
+      
+      .sidebar__highlight-details p {
+        font-size: 8px;
+        color: #767676;
+      }
+      .sun-title{
+        font-size: 20px;
+      }
+      .sun-text{
+        font-size: 12px;
+      }
+      
+}
+
+@media screen and (max-width: 1015px) {
+    .highlights-box{
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+    }
+    .sidebar__highlights-title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  /* For mobile devices */
+  .sidebar__highlight-item,
+  .sidebar__sun-info,
+  .sidebar__extra li {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sidebar__highlights-title,
+  .sidebar__extra h2,
+  .sidebar__extra h3 {
+    font-size: 1rem;
+  }
+
+  .sidebar__highlight-details h2 {
+    font-size: 1rem;
+  }
+
+  .sidebar__highlight-details p {
+    font-size: 0.875rem;
+  }
+
+  .box {
+    gap: 50px;
+  }
+
+  .sidebar__hourly ul {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar__hourly li {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+    .sidebar__highlight-status{
+        font-size: 8px;
+    }
+    .wind{
+        width: 50px;
+        height: 50px;  
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .sidebar__hourly ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media screen and (max-width: 585px) {
+    .drop{
+        width: 30px;
+        height: 30px;
+    }
+    .drop-title{
+        font-size: 20px;
+    }
+
+}

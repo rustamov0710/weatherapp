@@ -111,7 +111,7 @@
   left: 50%;
   width: 18px;
   height: 18px;
-  background: url("moon.png") no-repeat center / contain;
+  background: url("../../images/moon.png") no-repeat center / contain;
   transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
@@ -124,7 +124,7 @@
   left: 50%;
   width: 18px;
   height: 18px;
-  background: url("sun.png") no-repeat center / contain;
+  background: url("./../../images/sun.png") no-repeat center / contain;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
